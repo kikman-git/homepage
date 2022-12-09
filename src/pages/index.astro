@@ -1,0 +1,58 @@
+---
+import MainWindow from '../components/Terminal/MainWindow.astro';
+import Promt from '../components/Terminal/Promt.astro';
+import TitleBar from '../components/Terminal/TitleBar.astro';
+import Layout from '../layouts/Layout.astro';
+import { Code } from 'astro/components';
+
+---
+
+<Layout >
+		<div class="text-zinc-100 selection:bg-teal-300 selection:text-zinc-800 h-screen flex items-center justify-center">
+			<div class="overflow-hidden shadow-2xl h-auto max-w-screen-sm">
+				<TitleBar title="phatng"/>
+				<MainWindow>
+					<Promt><span class="text-green-500"> cat</span> README.md</Promt>
+					<h1 class="font-extrabold"># My little personal site.</h1>
+					<br />
+					<h2 class="font-extrabold">## Stacks</h2>
+					<p>
+						-
+						**<span class="text-purple-600 font-bold">Astro🚀</span>**
+						: Astro is an all-in-one web framework for building fast, content-focused websites.
+					</p>
+					<p>
+						-
+						**<span class="text-blue-400 font-bold">TailwindCSS💨</span>**
+						: Using utility classes to build custom designs without writing CSS.
+					</p>
+					<br />
+					<h2 class="font-extrabold">## Getting Started</h2>
+					<Code code={`// Clone this repo`} lang="bash" theme="dark-plus"/>
+					<Code code={`yarn install`} lang="bash" theme="dark-plus"/>
+					<Code code={`yarn dev`} lang="bash" theme="dark-plus"/>
+					<br />
+					<h2 class="font-extrabold">## Links</h2>
+					<p>
+						-
+						<a
+							class="hover:underline"
+							href="https://github.com/kikman.star"
+							target="_blank">[Github](https://github.com/kikman.star)</a
+						>
+					</p>
+					<p>
+						-
+						<a
+							class="hover:underline"
+							href="mailto:duongquanghung749@gmail.com"
+							target="_blank">[Linkedin](https://www.linkedin.com/in/phat-nguyen-167abb178/)</a
+						>
+					</p>
+					<Promt></Promt>
+				</MainWindow>
+			</div>
+		</div>
+</Layout>
+
+

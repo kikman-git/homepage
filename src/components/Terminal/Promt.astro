@@ -1,0 +1,19 @@
+---
+export interface Props {
+	dirPath?: string
+    user?: string
+}
+const { dirPath = "~", user = "phatng" } = Astro.props;
+---
+
+<p>
+	<span class="text-green-500 text-xs">➜</span>
+	<span class="text-teal-300 font-bold">{user}-homepage</span>
+	<span class="text-blue-600 font-bold">git:(</span>
+	<span class="text-red-600 font-bold">master</span>
+	<span class="text-blue-600 font-bold">)</span>
+	<span class="text-yellow-300 font-bold text-xs"> ✗ </span>
+	<!-- <span class="text-blue-300"
+		>{dirPath}</span>$  -->
+	<slot />
+</p>
