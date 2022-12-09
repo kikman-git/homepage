@@ -6,8 +6,7 @@
 ## Getting Started
 ```bash
 # Clone this repo
-
+git clone https://github.com/kikman-git/homepage.git
 yarn install
-
 yarn dev
 ```
